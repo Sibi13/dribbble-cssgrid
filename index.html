@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Dribbble on CSSGrid</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <navbar class="navbar">
+    <div class="navbar-head"><a class="navbar-logo" href="#"><img src="img/dribbble-logo-w.png" alt=""/></a>
+      <button class="navbar-toggle" id="navbar-toggle"></button>
+    </div>
+    <div class="nav-links">
+      <ul class="nav-right">
+        <li class="nav-link">
+          <form class="search-form">
+            <input type="text" placeholder="Search"/>
+          </form>
+        </li>
+        <li class="nav-link nav-link--sign-in"><a href="#">Sign in</a></li>
+        <li class="nav-link nav-link--sign-up"><a href="#">Sign up</a></li>
+      </ul>
+      <ul class="nav-left">
+        <li class="nav-link"><a href="#">Shots</a></li>
+        <li class="nav-link"><a href="#">Designers</a></li>
+        <li class="nav-link"><a href="#">Teams</a></li>
+        <li class="nav-link submenu"><a class="submenu-label" href="#">Community</a>
+          <ul class="sub-links">
+            <li class="sub-link"><a href="#">Blog</a></li>
+            <li class="sub-link"><a href="#">Podcast</a></li>
+            <li class="sub-link"><a href="#">Meetups</a></li>
+            <li class="sub-link"><a href="#">Hang Time</a></li>
+            <li class="sub-link nav-link--divide"><a href="#">Host a Meetup</a></li>
+          </ul>
+        </li>
+        <li class="nav-link"><a href="#">Jobs</a></li>
+        <li class="nav-link"><a href="#">Hiring</a></li>
+        <li class="nav-link submenu"><a class="submenu-label submenu-label--more" href="#">More</a>
+          <ul class="sub-links">
+            <li class="sub-link"><a href="#">About Dribbble</a></li>
+            <li class="sub-link"><a href="#">Dribbble Store</a></li>
+            <li class="sub-link"><a href="#">Help</a></li>
+            <li class="sub-link"><a href="#">Careers</a></li>
+            <li class="sub-link"><a href="#">Guidelines</a></li>
+            <li class="sub-link"><a href="#">Brand</a></li>
+            <li class="sub-link"><a href="#">Integrations</a></li>
+            <li class="sub-link"><a href="#">API</a></li>
+            <li class="sub-link"><a href="#">Advertise</a></li>
+            <li class="sub-link nav-link--divide"><a href="#">Goods by Designers</a></li>
+            <li class="sub-link"><a href="#">Colors</a></li>
+            <li class="sub-link"><a href="#">Guidelines</a></li>
+            <li class="sub-link"><a href="#">Designers by Location</a></li>
+            <li class="sub-link nav-link--divide"><a href="#">iOS App</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </navbar>
+  <main class="content-area">
+    <div class="cta-signup">
+      <p><strong>What are you working on?</strong> Dribbble is where designers get inspired and hired.</p><a class="btn" href="#">Continue</a>
+    </div>
+    <div class="cta-hire">
+      <p>Looking to hire a designer? <a href="#">Learn more</a></p>
+    </div>
+    <ul class="dribbbles">
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-01.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-02.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">14</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-03.jpg" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">55</a>
+          </div><a class="gif-target" href="#"></a><span class="gif-indicator">gif</span>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-04.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">713</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-05.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra">
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-06.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">25</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-07.gif" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">63</a>
+          </div><a class="gif-target" href="#"></a><span class="gif-indicator">gif</span>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-08.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">3</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-09.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">364</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-10.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">3</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-11.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">4</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-12.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">89</a>
+          </div><a class="gif-target" href="#"></a><span class="gif-indicator">gif</span>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-13.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">3</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-14.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><a class="shot-extra__rebound" href="#">81</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+      <li class="dribbble">
+        <div class="shot"><a class="shot__img" href="#"><img src="img/shot-15.png" alt="shot image"/>
+            <div class="shot__caption">
+              <h3 class="shot__caption-title">Caption Title</h3>
+              <p class="shot__caption-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusantium, hic magnam amet, dolorum atque deleniti blanditiis iure porro ipsa quos cum!</p><strong class="shot__timestamp">24 Mar 2018</strong>
+            </div></a>
+          <ul class="shot-meta">
+            <li class="shot-meta__fav"><a href="#">1670</a></li>
+            <li class="shot-meta__cmnt">76</li>
+            <li class="shot-meta__views">100,839</li>
+          </ul>
+          <div class="shot-extra"><span class="shot-extra__attach"></span><a class="shot-extra__rebound" href="#">48</a>
+          </div>
+        </div>
+        <div class="shot-attribution"><a class="profile-name" href="#"><img src="img/users/user-01.jpg" alt=""/>Adithya Jayan</a><a class="profile-badge" href="#">team</a></div>
+      </li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-about"><img class="footer-logo" src="img/dribbble-logo.png" alt="Dribbble Logo"/><span class="footer-slogan">Show and tell for designers</span>
+        <p class="footer-info">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.</p>
+        <ul class="footer-social">
+          <li class="footer-social__link"><a href="#"><img src="img/icons/icon-team-dribbble.png" alt="Icon team dribbble"/></a></li>
+          <li class="footer-social__link"><a href="#"><img src="img/icons/icon-team-twitter.png" alt="Icon team twitter"/></a></li>
+          <li class="footer-social__link"><a href="#"><img src="img/icons/icon-team-facebook.png" alt="Icon team facebook"/></a></li>
+          <li class="footer-social__link"><a href="#"><img src="img/icons/icon-team-instagram.png" alt="Icon team instagram"/></a></li>
+          <li class="footer-social__link"><a href="#"><img src="img/icons/icon-team-blog.png" alt="Icon team blog"/></a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <div class="extra-links">
+          <h3 class="footer-links__title"><a href="#">Dribbble</a></h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">iOS App</a></li>
+          </ul>
+        </div>
+        <div class="hiring-links">
+          <h3 class="footer-links__title"><a href="#">Hiring at Dribbble</a></h3>
+          <ul>
+            <li><a href="#">Post a job</a></li>
+            <li><a href="#">Scout designers</a></li>
+            <li><a href="#">Add your team</a></li>
+            <li><a href="#">Crew: Hire freelancers</a></li>
+          </ul>
+        </div>
+        <div class="job-links">
+          <h3 class="footer-links__title"><a href="#">Jobs for Designers</a></h3>
+          <ol class="job-list">
+            <li class="job-item"><a class="job-item__logo" href="#"><img src="img/team-remind.png" alt="Team Remind logo"/></a><a class="job-item__info" href="#"><span class="job-item__title">Remind</span><span class="job-item__desc">Product Designer</span></a></li>
+            <li class="job-item"><a class="job-item__logo" href="#"><img src="img/team-octopus.jpg" alt="Team Octopus Labs logo"/></a><a class="job-item__info" href="#"><span class="job-item__title">Octopus Labs</span><span class="job-item__desc">UI Designer</span></a></li>
+            <li class="job-item"><a class="job-item__logo" href="#"><img src="img/team-poll.png" alt="Team Poll Everywhere Logo"/></a><a class="job-item__info" href="#"><span class="job-item__title">Poll Everywhere</span><span class="job-item__desc">Product Designer</span></a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="footer-misc">
+        <div class="footer-ad"><a class="footer-ad__img" href="#"><img src="img/ad.png" alt=""/></a>
+          <div class="footer-ad__info"><a class="footer-ad__desc" href="#">Season 2 of Dribbble's Overtime podcast is here! Listen now!</a><a class="footer-ad__poweredby" href="#">Ads via Carbon</a></div>
+        </div>
+        <h4 class="pixels-dribbbled"><strong>1,000,000,000,000</strong><span>pixels dribbbled</span></h4>
+      </div>
+    </div>
+    <div class="footer-secondary">
+      <div class="footer-copyright">&copy; 2018 Dribbble. All rights reserved.</div>
+      <div class="footer-love">
+        <p>Made with <span class="dribbb-pink">♥ + #CSSGrid</span> by <a class="dribbb-pink" href="https://twitter.com/Sibi_13">@sibi_13</a>.</p>
+        <p>Codepen: <a class="dribbb-pink" href="https://codepen.io/sibi13/#">@sibi13</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/vendor/zepto.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
