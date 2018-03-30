@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	background: #f4f4f4;
+}
+
+::selection {
+    color: #fce7ee;
+    background: #ea568c;
+}

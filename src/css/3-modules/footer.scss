@@ -1,0 +1,194 @@
+.footer {
+	background: #fff;
+	padding: 20px 15px;
+	color: #999;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+
+.footer-logo {
+	width: 80px;
+}
+
+.footer-slogan {
+	font-size: 15px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.footer-info {
+	margin: 0px 0px 20px 0px;
+	line-height: 1.6;
+	font-size: 13px;
+	max-width: 300px;
+}
+
+
+.footer-social {
+
+	&__link {
+		opacity: .37;
+		transition: opacity .25s ease;
+
+		&:hover {
+			opacity: .72;
+		}
+	}
+}
+
+.footer-links {
+	margin-bottom: 20px;
+
+	a, h3 {
+		color: #999;
+	}
+
+	&__title {
+		margin: 0px 0px 5px 0px;
+		font-size: 14px;
+		font-weight: 700;
+
+		 a {
+		 	transition: color .25s ease;
+
+		 	&:hover {
+		 		color: #444;
+		 	}
+		 }
+	}
+
+	ul {
+		margin: 0px;
+
+		a {
+			font-size: 13px;
+			line-height: 1.8;
+			transition: color .25s ease;
+
+			&:hover {
+		 		color: #444;
+		 	}
+		}
+	}
+	
+}
+
+.extra-links,
+.hiring-links {
+	margin-bottom: 20px;
+}
+
+.job-list {
+	margin: 10px 0px 0px 0px;
+}
+
+
+.job-item {
+
+	&__title {
+		color: #3a8bbb;
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	&__desc {
+		font-size: 12px;
+		color: #999;
+	}
+
+	&__info {
+		transition: opacity .25s ease;
+	}
+
+	&:hover {
+		.job-item__info {
+			opacity: 0.8;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+
+.footer-ad {
+
+	&__desc {
+		font-size: 13px;
+		line-height: 1.5;
+		color: #777;
+		transition: color .25s ease;
+
+		&:hover {
+			color: #444;
+		}
+	}
+
+	&__poweredby {
+		display: inline-block;
+		margin-top: 4px;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: .03em;
+		font-weight: 700;
+		line-height: 1.5;
+		color: #bbb;
+
+		transition: color .25s ease;
+
+		&:hover {
+			color: #999;
+		}
+	}
+}
+
+
+.pixels-dribbbled {
+	margin: 0px 0px 20px 0px;
+
+	strong {
+		font-size: 1.5em;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #333;
+	}
+
+	span {
+		font-size: 1em;
+		line-height: 1.4;
+		color: #777;
+	}
+
+}
+
+
+.footer-copyright {
+	padding: 0px;
+	font-size: 14px;
+	color: #999;
+	margin: 0 0 20px 0;
+
+	@media(min-width: 550px) {
+		margin-top: 20px;
+	}
+}
+
+.footer-love {
+	padding-top: 2px;
+	font-size: 14px;
+	margin: 0 0 20px 0;
+	font-weight: 700;
+
+	.dribbb-pink {
+		color: #ea4c89;
+		transition: color .25s ease;
+
+		&:hover {
+			color: #c32361;
+		}
+	}
+}

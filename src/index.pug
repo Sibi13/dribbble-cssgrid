@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Dribbble on CSSGrid
+	
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="css/style.css")
+
+body
+	
+	//- NAVBAR
+	navbar.navbar
+		.navbar-head
+			a(href="#").navbar-logo
+				img(src="img/dribbble-logo-w.png", alt="")
+			button.navbar-toggle#navbar-toggle
+		
+		//- .navbar-links
+		.nav-links
+			ul.nav-right
+				li.nav-link
+					form.search-form
+						input(type="text", placeholder="Search")
+				li.nav-link.nav-link--sign-in
+					a(href="#") Sign in
+				li.nav-link.nav-link--sign-up
+					a(href="#") Sign up
+
+			ul.nav-left
+				li.nav-link
+					a(href="#") Shots
+				li.nav-link
+					a(href="#") Designers
+				li.nav-link
+					a(href="#") Teams
+				li.nav-link.submenu
+					a(href="#").submenu-label Community
+					ul.sub-links
+						li.sub-link
+							a(href="#") Blog
+						li.sub-link
+							a(href="#") Podcast
+						li.sub-link
+							a(href="#") Meetups
+						li.sub-link
+							a(href="#") Hang Time
+						li.sub-link.nav-link--divide
+							a(href="#") Host a Meetup
+				li.nav-link
+					a(href="#") Jobs
+				li.nav-link
+					a(href="#") Hiring
+				li.nav-link.submenu
+					a(href="#").submenu-label.submenu-label--more More
+					ul.sub-links
+						li.sub-link
+							a(href="#") About Dribbble
+						li.sub-link
+							a(href="#") Dribbble Store
+						li.sub-link
+							a(href="#") Help
+						li.sub-link
+							a(href="#") Careers
+						li.sub-link
+							a(href="#") Guidelines
+						li.sub-link
+							a(href="#") Brand
+						li.sub-link
+							a(href="#") Integrations
+						li.sub-link
+							a(href="#") API
+						li.sub-link
+							a(href="#") Advertise
+						li.sub-link.nav-link--divide
+							a(href="#") Goods by Designers
+						li.sub-link
+							a(href="#") Colors
+						li.sub-link
+							a(href="#") Guidelines
+						li.sub-link
+							a(href="#") Designers by Location
+						li.sub-link.nav-link--divide
+							a(href="#") iOS App
+	
+	//- CONTENT AREA
+	main.content-area
+
+		.cta-signup
+			p #[strong What are you working on?] Dribbble is where designers get inspired and hired.
+			a(href="#").btn Continue
+
+		.cta-hire
+			p Looking to hire a designer? #[a(href="#") Learn more]
+
+		include pug/shots.pug
+	
+	//- FOOTER
+	footer.footer
+		.footer-main
+			.footer-about
+				img(src="img/dribbble-logo.png", alt="Dribbble Logo").footer-logo
+				span.footer-slogan
+					| Show and tell for designers
+				p.footer-info
+					| What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.
+				ul.footer-social
+					li.footer-social__link
+						a(href="#")
+							img(src="img/icons/icon-team-dribbble.png", alt="Icon team dribbble")
+					li.footer-social__link
+						a(href="#")
+							img(src="img/icons/icon-team-twitter.png", alt="Icon team twitter")
+					li.footer-social__link
+						a(href="#")
+							img(src="img/icons/icon-team-facebook.png", alt="Icon team facebook")
+					li.footer-social__link
+						a(href="#")
+							img(src="img/icons/icon-team-instagram.png", alt="Icon team instagram")
+					li.footer-social__link
+						a(href="#")
+							img(src="img/icons/icon-team-blog.png", alt="Icon team blog")
+
+			.footer-links
+				.extra-links
+					h3.footer-links__title
+						a(href="#") Dribbble
+					ul
+						li
+							a(href="#") About
+						li
+							a(href="#") Help
+						li
+							a(href="#") Contact
+						li
+							a(href="#") Careers
+						li
+							a(href="#") Terms
+						li
+							a(href="#") Guidelines
+						li
+							a(href="#") Privacy
+						li
+							a(href="#") Shop
+						li
+							a(href="#") Testimonials
+						li
+							a(href="#") Brand
+						li
+							a(href="#") Advertise
+						li
+							a(href="#") API
+						li
+							a(href="#") Integrations
+						li
+							a(href="#") iOS App
+
+				.hiring-links
+					h3.footer-links__title
+						a(href="#") Hiring at Dribbble
+					ul
+						li
+							a(href="#") Post a job
+						li
+							a(href="#") Scout designers
+						li
+							a(href="#") Add your team
+						li
+							a(href="#") Crew: Hire freelancers
+
+				.job-links
+					h3.footer-links__title
+						a(href="#") Jobs for Designers
+					ol.job-list
+						li.job-item
+							a(href="#").job-item__logo
+								img(src="img/team-remind.png", alt="Team Remind logo")
+							a(href="#").job-item__info
+								span.job-item__title Remind
+								span.job-item__desc Product Designer
+						li.job-item
+							a(href="#").job-item__logo
+								img(src="img/team-octopus.jpg", alt="Team Octopus Labs logo")
+							a(href="#").job-item__info
+								span.job-item__title Octopus Labs
+								span.job-item__desc UI Designer
+						li.job-item
+							a(href="#").job-item__logo
+								img(src="img/team-poll.png", alt="Team Poll Everywhere Logo")
+							a(href="#").job-item__info
+								span.job-item__title Poll Everywhere
+								span.job-item__desc Product Designer
+
+			.footer-misc
+				.footer-ad
+					a(href="#").footer-ad__img
+						img(src="img/ad.png", alt="")
+					.footer-ad__info
+						a(href="#").footer-ad__desc
+							| Season 2 of Dribbble's Overtime podcast is here! Listen now!
+						a(href="#").footer-ad__poweredby Ads via Carbon
+
+				h4.pixels-dribbbled
+					strong 1,000,000,000,000
+					span pixels dribbbled
+
+
+		.footer-secondary
+			.footer-copyright
+				| &copy; 2018 Dribbble. All rights reserved.
+
+			.footer-love
+				p Made with #[span.dribbb-pink ♥ + #CSSGrid] by #[a(class="dribbb-pink", href="https://twitter.com/Sibi_13") @sibi_13].
+				p Codepen: #[a(class="dribbb-pink", href="https://codepen.io/sibi13/#") @sibi13]
+
+	script(src="js/vendor/zepto.min.js")
+	script(src="js/main.js")

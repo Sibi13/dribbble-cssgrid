@@ -1,0 +1,160 @@
+.footer-main {
+
+	@media(min-width: 992px) {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-gap: 20px;
+	}
+}
+
+
+// FOOTER MISC
+
+.footer-misc {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	align-content: start;
+}
+
+// FOOTER ABOUT
+.footer-logo {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.footer-social {
+	padding: 0px;
+	list-style: none;
+	display: grid;
+	grid-gap: 0px 10px;
+	grid-template-columns: repeat(auto-fill, 24px);
+
+	img {
+		width: 100%;
+	}
+}
+
+
+// FOOTER LINKS
+
+.footer-links {
+
+	&__title {
+		color: #333;
+	}
+
+	@media(min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 25%;
+	}
+
+	@media(min-width: 992px) {
+		padding-right: 0px;
+	}
+}
+
+.extra-links {
+
+	ul {
+		padding: 0px;
+		list-style: none;
+		column-count: 2;
+		column-gap: 20px;
+
+		@media(min-width: 992px) {
+			column-count: 1;
+		}
+
+		@media(min-width: 1200px) {
+			column-count: 2;
+		}
+	}
+}
+
+.hiring-links {
+	ul {
+		padding: 0px;
+		list-style: none;
+	}
+}
+
+.job-links {
+
+}
+
+.job-list {
+	padding: 0px;
+	list-style: none;
+}
+
+.job-item {
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 15px;
+
+	&__logo {
+		display: block;
+		margin-right: 10px;
+		width: 36px;
+
+		img {
+			display: block;
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	&__title,
+	&__desc {
+		display: block;
+	}
+}
+
+.footer-ad {
+	display: grid;
+	grid-gap: 10px;		
+	grid-template-columns: auto 1fr;
+
+
+	&__img {
+		display: block;
+		width: 130px;
+		
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__desc {
+		display: block;
+	}
+}
+
+.pixels-dribbbled {
+	padding: 10px 10px 10px 54px;
+	background: url(../img/ball.png) no-repeat;
+	background-position: 0 50%;
+	
+	strong {
+		display: block;
+	}
+
+	span {
+		font-weight: normal;
+	}
+}
+
+.footer-secondary {
+	@media(min-width: 992px) {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+}
+
+.footer-copyright {
+	padding: 20px 10px;
+}
